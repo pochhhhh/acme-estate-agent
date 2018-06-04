@@ -1,0 +1,151 @@
+/*
+Navbar purple: #0A0028
+white: white
+pink: #FF728C
+dark grey: #AFB0B1
+light grey: #F9F8F4
+
+ */
+
+
+/* Header */
+
+body{
+
+margin: 0;
+padding: 0;
+font-family: 'Roboto', sans-serif;
+box-sizing: border-box;
+
+}
+nav{
+
+width:100vw;
+background: #0B0129;
+color:white;
+padding:20px 15px 15px;
+
+
+}
+nav a{
+  color:white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-family: arial;
+  font-weight: 300;
+  font-size: .9rem;
+}
+nav a:hover{
+  color: #FF728C;
+}
+nav .logo{
+background:none;
+}
+
+.Header-content{
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+width:80vw;
+margin: 0 auto;
+
+}
+
+nav ul{
+
+background: none;
+
+}
+nav ul li{
+display: inline;
+
+}
+nav ul .register-btn{
+  background: #FF728C;
+  padding: 10px 25px;
+  text-align: center;
+  color:white;
+  border-radius:5px;
+}
+
+/* Content area */
+
+/* Sidebar */
+
+#Sidebar{
+
+background: #F9F8F4;
+width:30%;
+
+}
+
+#Sidebar select{
+
+background: transparent;
+padding:10px;
+font-size:14px;
+font-weight: 500;
+color: #1b1b1b;
+display: block;
+margin-bottom:25px;
+width:100%;
+
+}
+
+#Sidebar h4{
+
+font-size:0.9rem;
+margin-bottom:25px;
+text-transform: uppercase;
+font-weight: 500;
+
+}
+
+#Sidebar .inside{
+
+padding:20px;
+max-width:300px;
+
+}
+
+#Sidebar .filters .title{
+
+font-size:0.9rem;
+display: block;
+margin-bottom: 1rem;
+color: #AFB0B1;
+
+}
+
+#Sidebar input[type=text]{
+
+border-radius: 5px;
+font-size: 1rem;
+padding:0.4rem;
+display: inline-block;
+width:40%;
+margin-right: 2.5%;
+margin-bottom: 1rem;
+}
+
+#Sidebar label{
+
+display: block;
+width:100%;
+padding:10px 0;
+
+}
+
+#Sidebar input[type=checkbox]{
+
+float:right;
+
+}
+
+/* Listings */
+
+#Listings{
+
+
+  
+}
