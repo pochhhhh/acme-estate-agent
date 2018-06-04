@@ -5,7 +5,7 @@ class Listings extends React.Component{
 render(){
 
 return(
-<section className="Listings">
+<section id="Listings">
 
 <section className="search-area">
 
@@ -15,7 +15,7 @@ return(
 
 <section className="sort-by-area">
 
-<div>
+<div className="results">
 390 results found
 </div>
 
@@ -28,9 +28,8 @@ return(
 
 <div className="view">
 
-<i className="fas fa-list-ul"></i>
-<i className="fas fa-menu"></i>
-<i className="fas fa-th"></i>
+<i className="fas fa-list-ul fa-2x"></i>
+<i className="fas fa-th fa-2x"></i>
 
 </div>
 

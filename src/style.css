@@ -70,12 +70,23 @@ nav ul .register-btn{
 
 /* Content area */
 
+#content-area{
+	
+	overflow:auto;
+	width:100%;
+	background:yellow;
+	
+}
+
 /* Sidebar */
 
 #Sidebar{
 
 background: #F9F8F4;
 width:30%;
+max-width:300px;
+display: inline-block;
+float:left;
 
 }
 
@@ -146,6 +157,72 @@ float:right;
 
 #Listings{
 
+width:70%;
+float:left;
+display:inline-block;
+padding:15px;
+border:none;
+border-bottom: 2px solid #AFB0B1;
+margin-bottom: 20px;
 
   
+}
+
+#Listings .search-area 	input[type=text]{
+	width:70%;
+	background:transparent;
+	font-size:2rem;
+	
+}
+
+#Listings .sort-by-area{
+	
+	margin-bottom:20px;
+	
+}
+
+#Listings .sort-by-area .results{
+
+font-size:0.8rem;
+color: grey;
+display:inline-block;
+
+}
+
+#Listings .sort-options{
+	
+	float:right;
+	
+}
+
+#Listings .sort-options select{
+	
+	font-size:1rem;
+	font-weight:300;
+	border: 1px solid #AFB0B1;
+	background:transparent;
+	padding:20px;
+	display:inline-block;
+	margin-right:15px;
+	vertical-align: top;
+	
+}
+
+#Listings .sort-options .view{
+	
+	display:inline-block;
+	
+}
+#Listings .sort-options .fas{
+	
+	font-size: 1.5rem;
+	margin-left:15px;
+	
+}
+
+
+#Listings .listings-results .listing{
+	
+	background:blue;
+	width:33.33%;
 }
