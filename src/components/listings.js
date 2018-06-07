@@ -41,7 +41,7 @@ return(
   <div className="listing">
 
 <div className="listing-img">
-<span className="Address">Address</span>
+<span className="address">123 Narnia</span>
 <div className="details">
 
 <div className="user-img"></div>
@@ -64,8 +64,9 @@ return(
   <span>3 bedrooms</span>
 </div>
 
-
 </div>
+
+<div className="view-btn">View Listing</div>
 
 </div>
 
