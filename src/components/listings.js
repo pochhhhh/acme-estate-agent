@@ -73,21 +73,350 @@ return(
 </div>
 
 <div className="bottom-info">
-<span>£1000 / month</span>
-<span><i class="fas fa-map-marker"></i>
-
-Ridgewood NY</span>
+<span className="price">£1000 / month</span>
+<span className="location"><i className="fas fa-map-marker"></i>Ridgewood NY</span>
 </div>
 
   </div>
 
+  <div className="listing">
+
+<div className="listing-img">
+<span className="address">123 Narnia</span>
+<div className="details">
+
+<div className="user-img"></div>
+<div className="user-details">
+
+<span className="user-name">Bob Smith</span>
+<span className="post-date">02/02/2020</span>
+
+</div>
+
+<div className="listing-details">
+
+<div className="floor-space">
+  <i class="fa fa-square"></i>
+  <span>1000 ft &sup2;</span>
+</div>
+
+<div className="bedrooms">
+  <i class="fa fa-bed"></i>
+  <span>3 bedrooms</span>
+</div>
+
+</div>
+
+<div className="view-btn">View Listing</div>
+
+</div>
+
+</div>
+
+<div className="bottom-info">
+<span className="price">£1000 / month</span>
+<span className="location"><i className="fas fa-map-marker"></i>Ridgewood NY</span>
+</div>
+
+  </div>
+
+  <div className="listing">
+
+<div className="listing-img">
+<span className="address">123 Narnia</span>
+<div className="details">
+
+<div className="user-img"></div>
+<div className="user-details">
+
+<span className="user-name">Bob Smith</span>
+<span className="post-date">02/02/2020</span>
+
+</div>
+
+<div className="listing-details">
+
+<div className="floor-space">
+  <i class="fa fa-square"></i>
+  <span>1000 ft &sup2;</span>
+</div>
+
+<div className="bedrooms">
+  <i class="fa fa-bed"></i>
+  <span>3 bedrooms</span>
+</div>
+
+</div>
+
+<div className="view-btn">View Listing</div>
+
+</div>
+
+</div>
+
+<div className="bottom-info">
+<span className="price">£1000 / month</span>
+<span className="location"><i className="fas fa-map-marker"></i>Ridgewood NY</span>
+</div>
+
+  </div>
+
+  <div className="listing">
+
+<div className="listing-img">
+<span className="address">123 Narnia</span>
+<div className="details">
+
+<div className="user-img"></div>
+<div className="user-details">
+
+<span className="user-name">Bob Smith</span>
+<span className="post-date">02/02/2020</span>
+
+</div>
+
+<div className="listing-details">
+
+<div className="floor-space">
+  <i class="fa fa-square"></i>
+  <span>1000 ft &sup2;</span>
+</div>
+
+<div className="bedrooms">
+  <i class="fa fa-bed"></i>
+  <span>3 bedrooms</span>
+</div>
+
+</div>
+
+<div className="view-btn">View Listing</div>
+
+</div>
+
+</div>
+
+<div className="bottom-info">
+<span className="price">£1000 / month</span>
+<span className="location"><i className="fas fa-map-marker"></i>Ridgewood NY</span>
+</div>
+
+  </div>
+
+  <div className="listing">
+
+<div className="listing-img">
+<span className="address">123 Narnia</span>
+<div className="details">
+
+<div className="user-img"></div>
+<div className="user-details">
+
+<span className="user-name">Bob Smith</span>
+<span className="post-date">02/02/2020</span>
+
+</div>
+
+<div className="listing-details">
+
+<div className="floor-space">
+  <i class="fa fa-square"></i>
+  <span>1000 ft &sup2;</span>
+</div>
+
+<div className="bedrooms">
+  <i class="fa fa-bed"></i>
+  <span>3 bedrooms</span>
+</div>
+
+</div>
+
+<div className="view-btn">View Listing</div>
+
+</div>
+
+</div>
+
+<div className="bottom-info">
+<span className="price">£1000 / month</span>
+<span className="location"><i className="fas fa-map-marker"></i>Ridgewood NY</span>
+</div>
+
+  </div>
+
+  <div className="listing">
+
+<div className="listing-img">
+<span className="address">123 Narnia</span>
+<div className="details">
+
+<div className="user-img"></div>
+<div className="user-details">
+
+<span className="user-name">Bob Smith</span>
+<span className="post-date">02/02/2020</span>
+
+</div>
+
+<div className="listing-details">
+
+<div className="floor-space">
+  <i class="fa fa-square"></i>
+  <span>1000 ft &sup2;</span>
+</div>
+
+<div className="bedrooms">
+  <i class="fa fa-bed"></i>
+  <span>3 bedrooms</span>
+</div>
+
+</div>
+
+<div className="view-btn">View Listing</div>
+
+</div>
+
+</div>
+
+<div className="bottom-info">
+<span className="price">£1000 / month</span>
+<span className="location"><i className="fas fa-map-marker"></i>Ridgewood NY</span>
+</div>
+
+  </div>
+
+  <div className="listing">
+
+<div className="listing-img">
+<span className="address">123 Narnia</span>
+<div className="details">
+
+<div className="user-img"></div>
+<div className="user-details">
+
+<span className="user-name">Bob Smith</span>
+<span className="post-date">02/02/2020</span>
+
+</div>
+
+<div className="listing-details">
+
+<div className="floor-space">
+  <i class="fa fa-square"></i>
+  <span>1000 ft &sup2;</span>
+</div>
+
+<div className="bedrooms">
+  <i class="fa fa-bed"></i>
+  <span>3 bedrooms</span>
+</div>
+
+</div>
+
+<div className="view-btn">View Listing</div>
+
+</div>
+
+</div>
+
+<div className="bottom-info">
+<span className="price">£1000 / month</span>
+<span className="location"><i className="fas fa-map-marker"></i>Ridgewood NY</span>
+</div>
+
+  </div>
+
+  <div className="listing">
+
+<div className="listing-img">
+<span className="address">123 Narnia</span>
+<div className="details">
+
+<div className="user-img"></div>
+<div className="user-details">
+
+<span className="user-name">Bob Smith</span>
+<span className="post-date">02/02/2020</span>
+
+</div>
+
+<div className="listing-details">
+
+<div className="floor-space">
+  <i class="fa fa-square"></i>
+  <span>1000 ft &sup2;</span>
+</div>
+
+<div className="bedrooms">
+  <i class="fa fa-bed"></i>
+  <span>3 bedrooms</span>
+</div>
+
+</div>
+
+<div className="view-btn">View Listing</div>
+
+</div>
+
+</div>
+
+<div className="bottom-info">
+<span className="price">£1000 / month</span>
+<span className="location"><i className="fas fa-map-marker"></i>Ridgewood NY</span>
+</div>
+
+  </div>
+
+  <div className="listing">
+
+<div className="listing-img">
+<span className="address">123 Narnia</span>
+<div className="details">
+
+<div className="user-img"></div>
+<div className="user-details">
+
+<span className="user-name">Bob Smith</span>
+<span className="post-date">02/02/2020</span>
+
+</div>
+
+<div className="listing-details">
+
+<div className="floor-space">
+  <i class="fa fa-square"></i>
+  <span>1000 ft &sup2;</span>
+</div>
+
+<div className="bedrooms">
+  <i class="fa fa-bed"></i>
+  <span>3 bedrooms</span>
+</div>
+
+</div>
+
+<div className="view-btn">View Listing</div>
+
+</div>
+
+</div>
+
+<div className="bottom-info">
+<span className="price">£1000 / month</span>
+<span className="location"><i className="fas fa-map-marker"></i>Ridgewood NY</span>
+</div>
+
+  </div>
+
+
+
+
 </section>
 
-<section className="pagination">
+<section id="pagination">
 
-<ul className="pagination-numbers">
+<ul className="pages">
 <li>Prev</li>
-<li>1</li>
+<li className="active">1</li>
 <li>2</li>
 <li>3</li>
 <li>4</li>
