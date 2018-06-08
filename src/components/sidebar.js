@@ -12,21 +12,33 @@ return(
 
 <h4>Filter</h4>
 
-<select name="district" className="filters district">
+<select name="borough" className="filters borough">
 
-<option>Ridgewood</option>
+<option>Hammersmith & Fulham</option>
+<option>Kensington & Chelsea</option>
+<option>Wandsworth</option>
+<option>Merton</option>
+<option>Islington</option>
+<option>Harrow</option>
+<option>Richmond upon Thames</option>
+<option>Camden</option>
 
 </select>
 
 <select name="housetype" className="filters housetype">
 
-<option>Ranch</option>
+<option>Flat</option>
+<option>House</option>
 
 </select>
 
 <select name="bedrooms" className="filters bedrooms">
 
-<option>2 BR</option>
+<option>1 Bedroom</option>
+<option>2 Bedrooms</option>
+<option>3 Bedrooms</option>
+<option>4 Bedrooms</option>
+<option>5 Bedrooms</option>
 
 </select>
 
@@ -52,9 +64,16 @@ return(
 
 <div className="filters extras">
 <span className="title">Extras</span>
+
 <label for="extras">
-<span>Elevators</span>
-<input name="extras" value="elevator" type="checkbox"/>
+<span>Balcony</span>
+<input name="extras" value="balcony" type="checkbox"/>
+</label>
+
+
+<label for="extras">
+<span>Conservatory</span>
+<input name="extras" value="conservatory" type="checkbox"/>
 </label>
 
 <label for="extras">

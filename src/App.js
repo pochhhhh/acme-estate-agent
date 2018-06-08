@@ -3,9 +3,10 @@ import Header from "./components/header";
 import Sidebar from "./components/sidebar";
 import Listings from "./components/listings";
 import Footer from "./components/footer";
+import listingsData from "./components/listingsData";
 import './App.css';
 import "./style.css";
-import listingsData from "./components/listingsData";
+
 
 class App extends Component {
 
@@ -27,13 +28,15 @@ listingsData: listingsData
 
   render() {
 	  
+	  //alert(this.state.listingsData.length);
+	  
 	  /*console.log(this.state.listingsData);*/
 	  
     return (
 
       <div className="App">
 	  
-	  <h1>{this.state.listingsData[0].address}</h1>
+	  {this.state.listingsData[0].address}
 
 	  <Header />
 
