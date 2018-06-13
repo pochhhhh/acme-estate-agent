@@ -17,7 +17,7 @@ return(
 <a href="#"><li>Create Ads</li></a>
 <a href="#"><li>About Us</li></a>
 <a href="#"><li>Log In</li></a>
-<a href="#" class="register-btn"><li>Register</li></a>
+<a href="#" className="register-btn"><li>Register</li></a>
 
 
 </ul>

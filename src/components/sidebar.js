@@ -65,28 +65,28 @@ return(
 <div className="filters extras">
 <span className="title">Extras</span>
 
-<label for="extras">
+<label htmlFor="extras">
 <span>Balcony</span>
 <input name="extras" value="balcony" type="checkbox"/>
 </label>
 
 
-<label for="extras">
+<label htmlFor="extras">
 <span>Conservatory</span>
 <input name="extras" value="conservatory" type="checkbox"/>
 </label>
 
-<label for="extras">
+<label htmlFor="extras">
 <span>Swimming Pool</span>
 <input name="extras" value="swimming-pool" type="checkbox"/>
 </label>
 
-<label for="extras">
+<label htmlFor="extras">
 <span>Garage</span>
 <input name="extras" value="garage" type="checkbox"/>
 </label>
 
-<label for="extras">
+<label htmlFor="extras">
 <span>Gym</span>
 <input name="extras" value="gym" type="checkbox"/>
 </label>

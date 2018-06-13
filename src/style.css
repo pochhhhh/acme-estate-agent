@@ -248,7 +248,6 @@ background: white;
 position: relative;
 color:white;
 padding:15px;
-background: url("./background.jpeg") no-repeat center;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 background-size:cover;
@@ -271,6 +270,9 @@ opacity: 1;
   position: absolute;
   bottom:20px;
   opacity: 1;
+text-shadow: -1px 5px 6px rgba(116, 102, 141, 1);
+  font-size:1.3rem;
+  text-transform: capitalize;
 
 }
 

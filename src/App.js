@@ -27,15 +27,15 @@ listingsData: listingsData
 
 
   render() {
-	  
+
 	  //alert(this.state.listingsData.length);
-	  
+
 	  /*console.log(this.state.listingsData);*/
-	  
+
     return (
 
       <div className="App">
-	  
+
 	  {this.state.listingsData[0].address}
 
 	  <Header />
@@ -44,7 +44,7 @@ listingsData: listingsData
 
 	  <Sidebar />
 
-	  <Listings/>
+	  <Listings listingsData={this.state.listingsData}/>
 
 	  </section>
 

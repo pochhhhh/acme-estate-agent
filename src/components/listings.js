@@ -2,6 +2,79 @@ import React from "react";
 
 class Listings extends React.Component{
 
+  constructor(){
+
+super();
+
+this.state = {
+
+
+
+}
+
+this.loopListings = this.loopListings.bind(this);
+
+  }
+
+  loopListings(){
+
+  const {listingsData} = this.props;
+
+  return listingsData.map((listing, index) => {
+
+    return(
+
+  <div className="listing" key={index}>
+
+<div className="listing-img"
+
+  style={{background: `url("${listing.image}") no-repeat center center`}}>
+
+<span className="address">{listing.address}</span>
+<div className="details">
+
+<div className="user-img"></div>
+<div className="user-details">
+
+<span className="user-name">Bob Smith</span>
+<span className="post-date">02/02/2020</span>
+
+</div>
+
+<div className="listing-details">
+
+<div className="floor-space">
+  <i className="fa fa-square"></i>
+  <span>1000 ft &sup2;</span>
+</div>
+
+<div className="bedrooms">
+  <i className="fa fa-bed"></i>
+  <span>{listing.bedrooms} bedrooms</span>
+</div>
+
+</div>
+
+<div className="view-btn">View Listing</div>
+
+</div>
+
+</div>
+
+<div className="bottom-info">
+<span className="price">£{listing.price}</span>
+<span className="location"><i className="fas fa-map-marker"></i> {listing.borough}</span>
+</div>
+
+  </div>
+
+);
+
+
+  })
+
+  }
+
 render(){
 
 return(
@@ -38,377 +111,8 @@ return(
 </section>
 
 <section className="listings-results">
-  <div className="listing">
 
-<div className="listing-img">
-<span className="address">123 Narnia</span>
-<div className="details">
-
-<div className="user-img"></div>
-<div className="user-details">
-
-<span className="user-name">Bob Smith</span>
-<span className="post-date">02/02/2020</span>
-
-</div>
-
-<div className="listing-details">
-
-<div className="floor-space">
-  <i class="fa fa-square"></i>
-  <span>1000 ft &sup2;</span>
-</div>
-
-<div className="bedrooms">
-  <i class="fa fa-bed"></i>
-  <span>3 bedrooms</span>
-</div>
-
-</div>
-
-<div className="view-btn">View Listing</div>
-
-</div>
-
-</div>
-
-<div className="bottom-info">
-<span className="price">£1000 / month</span>
-<span className="location"><i className="fas fa-map-marker"></i>Ridgewood NY</span>
-</div>
-
-  </div>
-
-  <div className="listing">
-
-<div className="listing-img">
-<span className="address">123 Narnia</span>
-<div className="details">
-
-<div className="user-img"></div>
-<div className="user-details">
-
-<span className="user-name">Bob Smith</span>
-<span className="post-date">02/02/2020</span>
-
-</div>
-
-<div className="listing-details">
-
-<div className="floor-space">
-  <i class="fa fa-square"></i>
-  <span>1000 ft &sup2;</span>
-</div>
-
-<div className="bedrooms">
-  <i class="fa fa-bed"></i>
-  <span>3 bedrooms</span>
-</div>
-
-</div>
-
-<div className="view-btn">View Listing</div>
-
-</div>
-
-</div>
-
-<div className="bottom-info">
-<span className="price">£1000 / month</span>
-<span className="location"><i className="fas fa-map-marker"></i>Ridgewood NY</span>
-</div>
-
-  </div>
-
-  <div className="listing">
-
-<div className="listing-img">
-<span className="address">123 Narnia</span>
-<div className="details">
-
-<div className="user-img"></div>
-<div className="user-details">
-
-<span className="user-name">Bob Smith</span>
-<span className="post-date">02/02/2020</span>
-
-</div>
-
-<div className="listing-details">
-
-<div className="floor-space">
-  <i class="fa fa-square"></i>
-  <span>1000 ft &sup2;</span>
-</div>
-
-<div className="bedrooms">
-  <i class="fa fa-bed"></i>
-  <span>3 bedrooms</span>
-</div>
-
-</div>
-
-<div className="view-btn">View Listing</div>
-
-</div>
-
-</div>
-
-<div className="bottom-info">
-<span className="price">£1000 / month</span>
-<span className="location"><i className="fas fa-map-marker"></i>Ridgewood NY</span>
-</div>
-
-  </div>
-
-  <div className="listing">
-
-<div className="listing-img">
-<span className="address">123 Narnia</span>
-<div className="details">
-
-<div className="user-img"></div>
-<div className="user-details">
-
-<span className="user-name">Bob Smith</span>
-<span className="post-date">02/02/2020</span>
-
-</div>
-
-<div className="listing-details">
-
-<div className="floor-space">
-  <i class="fa fa-square"></i>
-  <span>1000 ft &sup2;</span>
-</div>
-
-<div className="bedrooms">
-  <i class="fa fa-bed"></i>
-  <span>3 bedrooms</span>
-</div>
-
-</div>
-
-<div className="view-btn">View Listing</div>
-
-</div>
-
-</div>
-
-<div className="bottom-info">
-<span className="price">£1000 / month</span>
-<span className="location"><i className="fas fa-map-marker"></i>Ridgewood NY</span>
-</div>
-
-  </div>
-
-  <div className="listing">
-
-<div className="listing-img">
-<span className="address">123 Narnia</span>
-<div className="details">
-
-<div className="user-img"></div>
-<div className="user-details">
-
-<span className="user-name">Bob Smith</span>
-<span className="post-date">02/02/2020</span>
-
-</div>
-
-<div className="listing-details">
-
-<div className="floor-space">
-  <i class="fa fa-square"></i>
-  <span>1000 ft &sup2;</span>
-</div>
-
-<div className="bedrooms">
-  <i class="fa fa-bed"></i>
-  <span>3 bedrooms</span>
-</div>
-
-</div>
-
-<div className="view-btn">View Listing</div>
-
-</div>
-
-</div>
-
-<div className="bottom-info">
-<span className="price">£1000 / month</span>
-<span className="location"><i className="fas fa-map-marker"></i>Ridgewood NY</span>
-</div>
-
-  </div>
-
-  <div className="listing">
-
-<div className="listing-img">
-<span className="address">123 Narnia</span>
-<div className="details">
-
-<div className="user-img"></div>
-<div className="user-details">
-
-<span className="user-name">Bob Smith</span>
-<span className="post-date">02/02/2020</span>
-
-</div>
-
-<div className="listing-details">
-
-<div className="floor-space">
-  <i class="fa fa-square"></i>
-  <span>1000 ft &sup2;</span>
-</div>
-
-<div className="bedrooms">
-  <i class="fa fa-bed"></i>
-  <span>3 bedrooms</span>
-</div>
-
-</div>
-
-<div className="view-btn">View Listing</div>
-
-</div>
-
-</div>
-
-<div className="bottom-info">
-<span className="price">£1000 / month</span>
-<span className="location"><i className="fas fa-map-marker"></i>Ridgewood NY</span>
-</div>
-
-  </div>
-
-  <div className="listing">
-
-<div className="listing-img">
-<span className="address">123 Narnia</span>
-<div className="details">
-
-<div className="user-img"></div>
-<div className="user-details">
-
-<span className="user-name">Bob Smith</span>
-<span className="post-date">02/02/2020</span>
-
-</div>
-
-<div className="listing-details">
-
-<div className="floor-space">
-  <i class="fa fa-square"></i>
-  <span>1000 ft &sup2;</span>
-</div>
-
-<div className="bedrooms">
-  <i class="fa fa-bed"></i>
-  <span>3 bedrooms</span>
-</div>
-
-</div>
-
-<div className="view-btn">View Listing</div>
-
-</div>
-
-</div>
-
-<div className="bottom-info">
-<span className="price">£1000 / month</span>
-<span className="location"><i className="fas fa-map-marker"></i>Ridgewood NY</span>
-</div>
-
-  </div>
-
-  <div className="listing">
-
-<div className="listing-img">
-<span className="address">123 Narnia</span>
-<div className="details">
-
-<div className="user-img"></div>
-<div className="user-details">
-
-<span className="user-name">Bob Smith</span>
-<span className="post-date">02/02/2020</span>
-
-</div>
-
-<div className="listing-details">
-
-<div className="floor-space">
-  <i class="fa fa-square"></i>
-  <span>1000 ft &sup2;</span>
-</div>
-
-<div className="bedrooms">
-  <i class="fa fa-bed"></i>
-  <span>3 bedrooms</span>
-</div>
-
-</div>
-
-<div className="view-btn">View Listing</div>
-
-</div>
-
-</div>
-
-<div className="bottom-info">
-<span className="price">£1000 / month</span>
-<span className="location"><i className="fas fa-map-marker"></i>Ridgewood NY</span>
-</div>
-
-  </div>
-
-  <div className="listing">
-
-<div className="listing-img">
-<span className="address">123 Narnia</span>
-<div className="details">
-
-<div className="user-img"></div>
-<div className="user-details">
-
-<span className="user-name">Bob Smith</span>
-<span className="post-date">02/02/2020</span>
-
-</div>
-
-<div className="listing-details">
-
-<div className="floor-space">
-  <i class="fa fa-square"></i>
-  <span>1000 ft &sup2;</span>
-</div>
-
-<div className="bedrooms">
-  <i class="fa fa-bed"></i>
-  <span>3 bedrooms</span>
-</div>
-
-</div>
-
-<div className="view-btn">View Listing</div>
-
-</div>
-
-</div>
-
-<div className="bottom-info">
-<span className="price">£1000 / month</span>
-<span className="location"><i className="fas fa-map-marker"></i>Ridgewood NY</span>
-</div>
-
-  </div>
-
-
-
+{this.loopListings()}
 
 </section>
 
