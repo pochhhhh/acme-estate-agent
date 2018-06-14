@@ -2,23 +2,25 @@ import React from "react";
 
 class Listings extends React.Component{
 
-  constructor(){
+	constructor(){
 
-super();
+		super();
 
-this.state = {
+		this.state = {
 
 
 
-}
+		}
 
-this.loopListings = this.loopListings.bind(this);
+	this.loopListings = this.loopListings.bind(this);
 
-  }
+	}
 
   loopListings(){
 
-  const {listingsData} = this.props;
+  const {listingsData} = this.props; //is the same as:
+  
+  //const listingsData = {this.props.listingsData}
 
   return listingsData.map((listing, index) => {
 
@@ -36,7 +38,7 @@ this.loopListings = this.loopListings.bind(this);
 <div className="user-img"></div>
 <div className="user-details">
 
-<span className="user-name">Bob Smith</span>
+<span className="user-name">{listing.userName}</span>
 <span className="post-date">02/02/2020</span>
 
 </div>
@@ -45,7 +47,7 @@ this.loopListings = this.loopListings.bind(this);
 
 <div className="floor-space">
   <i className="fa fa-square"></i>
-  <span>1000 ft &sup2;</span>
+  <span>{listing.floorspace} ft &sup2;</span>
 </div>
 
 <div className="bedrooms">

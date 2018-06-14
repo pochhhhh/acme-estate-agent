@@ -16,11 +16,44 @@ super(props);
 
 this.state = {
 
-listingsData: listingsData
+listingsData: listingsData,
+min_price: 0,
+max_price: 1000000000,
+min_floor_space: 0,
+max_floor_space: 50000,
+balcony: false,
+conservatory: false,
+swimming_pool: false,
+garage: false,
+gym: false
 
 
 }
 
+this.change = this.change.bind(this);
+
+}
+
+
+
+
+change(event){
+	
+	let name = event.target.name;
+	let value = (event.target.type === "checkbox") ? event.target.checked : event.target.value;
+
+	
+	this.setState({
+	
+	[name]: value	
+		
+	}, () =>{
+		
+		console.log(this.state);
+		
+	});
+	
+	
 
 }
 
@@ -42,7 +75,7 @@ listingsData: listingsData
 
 	  <section id="content-area">
 
-	  <Sidebar />
+	  <Sidebar change={this.change} globalState={this.state}/>
 
 	  <Listings listingsData={this.state.listingsData}/>
 

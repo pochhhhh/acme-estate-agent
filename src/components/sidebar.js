@@ -12,33 +12,33 @@ return(
 
 <h4>Filter</h4>
 
-<select name="borough" className="filters borough">
+<select name="borough" className="filters borough" onChange={this.props.change}>
 
-<option>Hammersmith & Fulham</option>
-<option>Kensington & Chelsea</option>
-<option>Wandsworth</option>
-<option>Merton</option>
-<option>Islington</option>
-<option>Harrow</option>
-<option>Richmond upon Thames</option>
-<option>Camden</option>
-
-</select>
-
-<select name="housetype" className="filters housetype">
-
-<option>Flat</option>
-<option>House</option>
+<option value="Hammersmith & Fulham">Hammersmith & Fulham</option>
+<option value="Kensington & Chelsea">Kensington & Chelsea</option>
+<option value="Wandsworth">Wandsworth</option>
+<option value="Merton">Merton</option>
+<option value="Islington">Islington</option>
+<option value="Harrow">Harrow</option>
+<option value="Richmond upon Thames">Richmond upon Thames</option>
+<option value="Camden">Camden</option>
 
 </select>
 
-<select name="bedrooms" className="filters bedrooms">
+<select name="housetype" className="filters housetype" onChange={this.props.change}>
 
-<option>1 Bedroom</option>
-<option>2 Bedrooms</option>
-<option>3 Bedrooms</option>
-<option>4 Bedrooms</option>
-<option>5 Bedrooms</option>
+<option value="Flat">Flat</option>
+<option value="House">House</option>
+
+</select>
+
+<select name="bedrooms" className="filters bedrooms" onChange={this.props.change}>
+
+<option value="1">1 Bedroom</option>
+<option value="2">2 Bedrooms</option>
+<option value="3">3 Bedrooms</option>
+<option value="4">4 Bedrooms</option>
+<option value="5">5 Bedrooms</option>
 
 </select>
 
@@ -46,9 +46,9 @@ return(
 
 <span className="title">Price</span>
 
-<input type="text" name="min-price" className="min-price"/>
+<input type="text" name="min_price" className="min_price" onChange={this.props.change} value={this.props.globalState.min_price}/>
 
-<input type="text" name="max-price" className="max-price"/>
+<input type="text" name="max_price" className="max_price" onChange={this.props.change} value={this.props.globalState.max_price}/>
 
 </div>
 
@@ -56,9 +56,9 @@ return(
 
 <span className="title">Floor Space</span>
 
-<input type="text" name="min-floor-space" className="min-floor-space"/>
+<input type="text" name="min_floor_space" className="min_floor_space" onChange={this.props.change} value={this.props.globalState.min_floor_space}/>
 
-<input type="text" name="max-floor-space" className="max-floor-space"/>
+<input type="text" name="max_floor_space" className="max_floor_space" onChange={this.props.change} value={this.props.globalState.max_floor_space}/>
 
 </div>
 
@@ -67,28 +67,28 @@ return(
 
 <label htmlFor="extras">
 <span>Balcony</span>
-<input name="extras" value="balcony" type="checkbox"/>
+<input name="balcony" value="balcony" type="checkbox" onChange={this.props.change}/>
 </label>
 
 
 <label htmlFor="extras">
 <span>Conservatory</span>
-<input name="extras" value="conservatory" type="checkbox"/>
+<input name="conservatory" value="conservatory" type="checkbox" onChange={this.props.change}/>
 </label>
 
 <label htmlFor="extras">
 <span>Swimming Pool</span>
-<input name="extras" value="swimming-pool" type="checkbox"/>
+<input name="swimming-pool" value="swimming-pool" type="checkbox" onChange={this.props.change}/>
 </label>
 
 <label htmlFor="extras">
 <span>Garage</span>
-<input name="extras" value="garage" type="checkbox"/>
+<input name="garage" value="garage" type="checkbox" onChange={this.props.change}/>
 </label>
 
 <label htmlFor="extras">
 <span>Gym</span>
-<input name="extras" value="gym" type="checkbox"/>
+<input name="gym" value="gym" type="checkbox" onChange={this.props.change}/>
 </label>
 
 </div>
