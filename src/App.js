@@ -17,6 +17,9 @@ super(props);
 this.state = {
 
 listingsData: listingsData,
+borough: "All",
+homeType: "All",
+bedrooms: 0,
 min_price: 0,
 max_price: 1000000000,
 min_floor_space: 0,
@@ -25,12 +28,14 @@ balcony: false,
 conservatory: false,
 swimming_pool: false,
 garage: false,
-gym: false
+gym: false,
+filteredData: listingsData
 
 
 }
 
 this.change = this.change.bind(this);
+this.filteredData = this.filteredData.bind(this);
 
 }
 
@@ -50,11 +55,54 @@ change(event){
 	}, () =>{
 		
 		console.log(this.state);
+		this.filteredData()
 		
 	});
 	
 	
 
+}
+
+filteredData(){
+	
+let newData = this.state.listingsData.filter((item) => {
+	
+	return item.price >= this.state.min_price 
+	&& item.price <= this.state.max_price 
+	&& item.floorSpace >= this.state.min_floor_space 
+	&& item.floorSpace <= this.state.max_floor_space
+	&& item.bedrooms >= this.state.bedrooms
+	
+})	
+
+if(this.state.borough !== "All"){
+	
+	newData = newData.filter((item) => {
+		
+		return item.borough === this.state.borough
+		
+	});
+	
+}
+
+if(this.state.homeType !== "All"){
+	
+	newData = newData.filter((item) => {
+		
+		return item.homeType === this.state.homeType
+		
+		
+	});
+	
+}
+	
+	this.setState({
+		
+		filteredData: newData
+		
+	});
+	
+	
 }
 
 
@@ -77,7 +125,7 @@ change(event){
 
 	  <Sidebar change={this.change} globalState={this.state}/>
 
-	  <Listings listingsData={this.state.listingsData}/>
+	  <Listings listingsData={this.state.filteredData}/>
 
 	  </section>
 

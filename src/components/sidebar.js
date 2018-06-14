@@ -12,8 +12,11 @@ return(
 
 <h4>Filter</h4>
 
+<label htmlFor="borough">Borough</label>
+
 <select name="borough" className="filters borough" onChange={this.props.change}>
 
+<option value="All">All Boroughs</option>
 <option value="Hammersmith & Fulham">Hammersmith & Fulham</option>
 <option value="Kensington & Chelsea">Kensington & Chelsea</option>
 <option value="Wandsworth">Wandsworth</option>
@@ -25,20 +28,26 @@ return(
 
 </select>
 
-<select name="housetype" className="filters housetype" onChange={this.props.change}>
+<label htmlFor="homeType">Home Type</label>
 
+<select name="homeType" className="filters homeType" onChange={this.props.change}>
+
+<option value="All">All Homes</option>
 <option value="Flat">Flat</option>
 <option value="House">House</option>
 
 </select>
 
+<label htmlFor="bedrooms">Bedrooms</label>
+
 <select name="bedrooms" className="filters bedrooms" onChange={this.props.change}>
 
-<option value="1">1 Bedroom</option>
-<option value="2">2 Bedrooms</option>
-<option value="3">3 Bedrooms</option>
-<option value="4">4 Bedrooms</option>
-<option value="5">5 Bedrooms</option>
+<option value="0">All</option>
+<option value="1">1+ Bedrooms</option>
+<option value="2">2+ Bedrooms</option>
+<option value="3">3+  Bedrooms</option>
+<option value="4">4+ Bedrooms</option>
+<option value="5">5+ Bedrooms</option>
 
 </select>
 

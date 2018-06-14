@@ -21,6 +21,15 @@ class Listings extends React.Component{
   const {listingsData} = this.props; //is the same as:
   
   //const listingsData = {this.props.listingsData}
+  
+  if(listingsData === undefined || listingsData.length === 0){
+	 
+
+return "Sorry your filter did not match any listing"	 
+  
+	  
+	  
+  }
 
   return listingsData.map((listing, index) => {
 
