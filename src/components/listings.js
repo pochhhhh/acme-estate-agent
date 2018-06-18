@@ -56,7 +56,7 @@ return "Sorry your filter did not match any listing"
 
 <div className="floor-space">
   <i className="fa fa-square"></i>
-  <span>{listing.floorspace} ft &sup2;</span>
+  <span>{listing.floorSpace} ft &sup2;</span>
 </div>
 
 <div className="bedrooms">

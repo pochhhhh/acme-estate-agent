@@ -29,13 +29,15 @@ conservatory: false,
 swimming_pool: false,
 garage: false,
 gym: false,
-filteredData: listingsData
+filteredData: listingsData,
+// populateFormsData: //Last change 15.06
 
 
 }
 
 this.change = this.change.bind(this);
 this.filteredData = this.filteredData.bind(this);
+this.populateForms = this.populateForms.bind(this);
 
 }
 
@@ -101,6 +103,47 @@ if(this.state.homeType !== "All"){
 		filteredData: newData
 		
 	});
+	
+	
+}
+
+populateForms(){
+	
+	//borough
+	
+	let boroughs = this.state.listingsData.map((item) => {
+		
+		return item.borough
+		
+	})
+	
+	boroughs = new Set(boroughs);
+	boroughs = [...boroughs];
+	
+	
+	//homeType
+	
+	let homeTypes = this.state.listingsData.map((item) => {
+		
+		return item.homeType
+		
+	})
+	
+	homeTypes = new Set(homeTypes);
+	homeTypes = [...homeTypes];
+	
+	
+	//bedrooms
+	
+		let bedrooms = this.state.listingsData.map((item) => {
+		
+		return item.bedrooms
+		
+	})
+	
+	bedrooms = new Set(bedrooms);
+	bedrooms = [...bedrooms];
+	
 	
 	
 }

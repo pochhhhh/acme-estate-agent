@@ -35,7 +35,7 @@ const listingsData = [{
 	floorSpace: 1000,
 	extras: ["Balcony"],
 	homeType: "Flat",
-	image: "https://www.architectsjournal.co.uk/pictures/980x653fitpad[31]/2/0/4/3091204_planningscheme.jpg",
+	image: "https://cdn.images.express.co.uk/img/dynamic/51/590x/london-flat-cheap-communal-pool-property-791939.jpg",
 	userName: "Valentine Jones"
 },
 
@@ -48,7 +48,7 @@ const listingsData = [{
 	floorSpace: 1000,
 	extras: ["Basement", "Balcony"],
 	homeType: "House",
-	image: "http://departmentofwandering.com/wp-content/uploads/2017/03/Kynace-Mews-0813.jpg",
+	image: "http://www.cityam.com/assets/uploads/main-image/cam_standard_article_main_image/2017/07/mews-5968f2da02035-5968f32eb49b5.jpg",
 	userName: "Sarah McDonald"
 }
 ,
@@ -62,7 +62,7 @@ const listingsData = [{
 	floorSpace: 1000,
 	extras: ["Conservatory"],
 	homeType: "House",
-	image: "https://secure.i.telegraph.co.uk/multimedia/archive/01863/london-property-3_1863858b.jpg",
+	image: "https://www.mortgageintroducer.com/wp-content/uploads/2016/01/london-houses.jpg",
 	userName: "Joseph Guild"
 }
 
@@ -90,7 +90,7 @@ const listingsData = [{
 	floorSpace: 1000,
 	extras: ["Balcony"],
 	homeType: "Flat",
-	image: "https://images.theconversation.com/files/130384/original/image-20160713-12372-1coon9q.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&fit=clip",
+	image: "https://alto2-live.s3.amazonaws.com/gpCrxsJh4ERxDn1hYIKrUcs3cmI/qiP3xIpgdAI4dbfGmn9IcyQ_vTY/Photo/[2]/6Va-PXhj0Uup6jGW1eXaHg.jpg",
 	userName: "Jack Guildford"
 },
 
@@ -103,7 +103,7 @@ const listingsData = [{
 	floorSpace: 1000,
 	extras: ["Garden"],
 	homeType: "House",
-	image: "https://images.theconversation.com/files/130384/original/image-20160713-12372-1coon9q.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&fit=clip",
+	image: "http://www.hatarch.co.uk/images/projects/rs_Swains_001.jpg",
 	userName: "Sharon Mulberry"
 },
 
@@ -116,8 +116,21 @@ const listingsData = [{
 	floorSpace: 1000,
 	extras: ["Garden", "Conservatory"],
 	homeType: "House",
-	image: "https://images.theconversation.com/files/130384/original/image-20160713-12372-1coon9q.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&fit=clip",
+	image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOkwyJHJcqXqAVIYynMT99c80z04IgQrTYjUdP7nuPq2OXi8ti7w",
 	userName: "Thomas Rizal"
+},
+
+{
+
+	address: "325 Applewood Road",
+	borough: "Hammersmith & Fulham",
+	bedrooms: 2,
+	price: 650000,
+	floorSpace: 1000,
+	extras: ["Garden"],
+	homeType: "House",
+	image: "http://media.rightmove.co.uk/dir/66k/65830/60594499/65830_SJW160193_IMG_01_0000_max_656x437.jpg",
+	userName: "Yvonne Fields"
 }
 
 ];

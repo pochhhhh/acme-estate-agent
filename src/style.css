@@ -270,9 +270,9 @@ opacity: 1;
   position: absolute;
   bottom:20px;
   opacity: 1;
-text-shadow: -1px 5px 6px rgba(116, 102, 141, 1);
-  font-size:1.3rem;
-  text-transform: capitalize;
+/* text-shadow: -1px 5px 6px rgba(116, 102, 141, 1);*/
+text-shadow: 2px 1px black;
+  font-size:1.5rem;
 
 }
 
