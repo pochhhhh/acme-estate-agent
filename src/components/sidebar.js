@@ -2,6 +2,89 @@ import React from "react";
 
 class Sidebar extends React.Component{
 
+constructor(){
+	
+	super();
+	
+	this.state = {
+		
+		
+	}
+	
+	this.boroughs = this.boroughs.bind(this);
+	this.homeTypes = this.homeTypes.bind(this);
+	this.bedrooms = this.bedrooms.bind(this);
+	
+	
+}
+
+
+componentWillMount(){
+	
+	this.props.populateAction();
+	
+}
+
+boroughs(){
+	
+if(this.props.globalState.populateFormsData.boroughs !== undefined){
+		
+let{ boroughs } = this.props.globalState.populateFormsData;
+
+console.log(boroughs);
+
+return boroughs.map((item) =>{
+	
+	return <option key={item} value={item}>{item}</option>
+	
+})
+		
+	}
+
+	
+	
+}
+
+
+homeTypes(){
+	
+if(this.props.globalState.populateFormsData.homeTypes !== undefined){
+		
+let { homeTypes } = this.props.globalState.populateFormsData;
+
+console.log(homeTypes);
+
+return homeTypes.map((item) =>{
+	
+	return <option key={item} value={item}>{item}</option>
+	
+})
+		
+	}
+	
+}
+
+bedrooms(){
+	
+if(this.props.globalState.populateFormsData.bedrooms !== undefined){
+		
+		
+let { bedrooms } = this.props.globalState.populateFormsData;
+
+console.log(bedrooms);
+
+return bedrooms.map((item) =>{
+	
+	return <option key={item} value={item}>{item} + BR</option>
+	
+})
+		
+	}
+	
+	
+}
+
+
 render(){
 
 return(
@@ -16,25 +99,21 @@ return(
 
 <select name="borough" className="filters borough" onChange={this.props.change}>
 
-<option value="All">All Boroughs</option>
-<option value="Hammersmith & Fulham">Hammersmith & Fulham</option>
-<option value="Kensington & Chelsea">Kensington & Chelsea</option>
-<option value="Wandsworth">Wandsworth</option>
-<option value="Merton">Merton</option>
-<option value="Islington">Islington</option>
-<option value="Harrow">Harrow</option>
-<option value="Richmond upon Thames">Richmond upon Thames</option>
-<option value="Camden">Camden</option>
+<option value="All">All</option>
+
+{this.boroughs()}
 
 </select>
+
+
 
 <label htmlFor="homeType">Home Type</label>
 
 <select name="homeType" className="filters homeType" onChange={this.props.change}>
 
 <option value="All">All Homes</option>
-<option value="Flat">Flat</option>
-<option value="House">House</option>
+
+{this.homeTypes()}
 
 </select>
 
@@ -43,11 +122,8 @@ return(
 <select name="bedrooms" className="filters bedrooms" onChange={this.props.change}>
 
 <option value="0">All</option>
-<option value="1">1+ Bedrooms</option>
-<option value="2">2+ Bedrooms</option>
-<option value="3">3+  Bedrooms</option>
-<option value="4">4+ Bedrooms</option>
-<option value="5">5+ Bedrooms</option>
+
+{this.bedrooms()}
 
 </select>
 

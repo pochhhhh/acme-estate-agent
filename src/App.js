@@ -30,7 +30,7 @@ swimming_pool: false,
 garage: false,
 gym: false,
 filteredData: listingsData,
-// populateFormsData: //Last change 15.06
+populateFormsData: ""
 
 
 }
@@ -144,9 +144,27 @@ populateForms(){
 	bedrooms = new Set(bedrooms);
 	bedrooms = [...bedrooms];
 	
+	this.setState({
+	
+	populateFormsData:{
+		
+		homeTypes,
+		bedrooms,
+		boroughs
+		
+		
+	}
+	
+}, () =>{
+	
+	console.log(this.state);
+	
+});
+	
 	
 	
 }
+
 
 
 
@@ -166,7 +184,11 @@ populateForms(){
 
 	  <section id="content-area">
 
-	  <Sidebar change={this.change} globalState={this.state}/>
+	  <Sidebar 
+	  change={this.change} 
+	  globalState={this.state}
+	  populateAction={this.populateForms}
+	  />
 
 	  <Listings listingsData={this.state.filteredData}/>
 
