@@ -19,16 +19,16 @@ class Listings extends React.Component{
   loopListings(){
 
   const {listingsData} = this.props; //is the same as:
-  
-  //const listingsData = {this.props.listingsData}
-  
-  if(listingsData === undefined || listingsData.length === 0){
-	 
 
-return "Sorry your filter did not match any listing"	 
-  
-	  
-	  
+  //const listingsData = {this.props.listingsData}
+
+  if(listingsData === undefined || listingsData.length === 0){
+
+
+return "Sorry your filter did not match any listing"
+
+
+
   }
 
   return listingsData.map((listing, index) => {
@@ -93,14 +93,14 @@ return(
 
 <section className="search-area">
 
-<input type="text" name="search"/>
+<input type="text" name="search" onChange={this.props.change}/>
 
 </section>
 
 <section className="sort-by-area">
 
 <div className="results">
-390 results found
+{this.props.globalState.filteredData.length} results found
 </div>
 
 <div className="sort-options">

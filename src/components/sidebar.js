@@ -3,85 +3,79 @@ import React from "react";
 class Sidebar extends React.Component{
 
 constructor(){
-	
+
 	super();
-	
+
 	this.state = {
-		
-		
+
+
 	}
-	
+
 	this.boroughs = this.boroughs.bind(this);
 	this.homeTypes = this.homeTypes.bind(this);
 	this.bedrooms = this.bedrooms.bind(this);
-	
-	
+
+
 }
 
 
 componentWillMount(){
-	
+
 	this.props.populateAction();
-	
+
 }
 
 boroughs(){
-	
+
 if(this.props.globalState.populateFormsData.boroughs !== undefined){
-		
+
 let{ boroughs } = this.props.globalState.populateFormsData;
 
-console.log(boroughs);
-
 return boroughs.map((item) =>{
-	
+
 	return <option key={item} value={item}>{item}</option>
-	
+
 })
-		
+
 	}
 
-	
-	
+
+
 }
 
 
 homeTypes(){
-	
+
 if(this.props.globalState.populateFormsData.homeTypes !== undefined){
-		
+
 let { homeTypes } = this.props.globalState.populateFormsData;
 
-console.log(homeTypes);
-
 return homeTypes.map((item) =>{
-	
+
 	return <option key={item} value={item}>{item}</option>
-	
+
 })
-		
+
 	}
-	
+
 }
 
 bedrooms(){
-	
+
 if(this.props.globalState.populateFormsData.bedrooms !== undefined){
-		
-		
+
+
 let { bedrooms } = this.props.globalState.populateFormsData;
 
-console.log(bedrooms);
-
 return bedrooms.map((item) =>{
-	
+
 	return <option key={item} value={item}>{item} + BR</option>
-	
+
 })
-		
+
 	}
-	
-	
+
+
 }
 
 
@@ -163,7 +157,7 @@ return(
 
 <label htmlFor="extras">
 <span>Swimming Pool</span>
-<input name="swimming-pool" value="swimming-pool" type="checkbox" onChange={this.props.change}/>
+<input name="swimming_pool" value="swimming_pool" type="checkbox" onChange={this.props.change}/>
 </label>
 
 <label htmlFor="extras">
