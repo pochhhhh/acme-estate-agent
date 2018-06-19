@@ -30,7 +30,7 @@ swimming_pool: false,
 garage: false,
 gym: false,
 filteredData: listingsData,
-populateFormsData: ""
+populateFormsData: "",
 
 
 }
@@ -41,6 +41,23 @@ this.populateForms = this.populateForms.bind(this);
 
 }
 
+componentWillMount(){
+	
+	let listingsData = this.state.listingsData.sort((a, b) =>{
+		
+		return a.price - b.price;
+		
+		
+	});
+	
+this.setState({
+	
+	listingsData
+	
+});	
+	
+	
+}
 
 
 
@@ -97,6 +114,26 @@ if(this.state.homeType !== "All"){
 	});
 	
 }
+
+if(this.state.sortby === "price-dsc"){
+	
+	newData = newData.sort((a, b) => {
+		
+		return a.price - b.price;
+		
+	});
+	
+}
+
+if(this.state.sortby === "price-asc"){
+	
+	newData = newData.sort((a, b) => {
+		
+		return b.price - a.price;
+		
+	});
+	
+}
 	
 	this.setState({
 		
@@ -120,6 +157,8 @@ populateForms(){
 	boroughs = new Set(boroughs);
 	boroughs = [...boroughs];
 	
+	boroughs = boroughs.sort();
+	
 	
 	//homeType
 	
@@ -132,6 +171,8 @@ populateForms(){
 	homeTypes = new Set(homeTypes);
 	homeTypes = [...homeTypes];
 	
+	homeTypes = homeTypes.sort();
+	
 	
 	//bedrooms
 	
@@ -143,6 +184,8 @@ populateForms(){
 	
 	bedrooms = new Set(bedrooms);
 	bedrooms = [...bedrooms];
+	
+	bedrooms = bedrooms.sort();
 	
 	this.setState({
 	
@@ -190,7 +233,10 @@ populateForms(){
 	  populateAction={this.populateForms}
 	  />
 
-	  <Listings listingsData={this.state.filteredData}/>
+	  <Listings 
+	  listingsData={this.state.filteredData}
+	  change={this.change}
+	  />
 
 	  </section>
 

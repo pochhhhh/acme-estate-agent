@@ -105,9 +105,9 @@ return(
 
 <div className="sort-options">
 
-<select name="sort-by" className="sort-by">
-<option value="price-asc">Highest Price</option>
+<select name="sortby" className="sortby" onChange={this.props.change}>
 <option value="price-dsc">Lowest Price</option>
+<option value="price-asc">Highest Price</option>
 </select>
 
 <div className="view">
