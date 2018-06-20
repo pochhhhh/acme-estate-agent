@@ -142,13 +142,20 @@ if(this.state.sortby === "price-asc"){
 
 if(this.state.balcony){
 
-console.log("you have a balcony");
+//console.log("you have a balcony");
 
 newData = newData.filter((item) => {
 
-console.log(item.extras);
+// console.log(item.extras);
+
+return item.extras.indexOf("Balcony") !== -1;
+
+
+
 
 });
+
+console.log(newData);
 
 }
 
