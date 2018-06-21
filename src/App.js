@@ -50,16 +50,11 @@ componentWillMount(){
 
 
 	});
-
-this.setState({
-
-	listingsData
-
-});
+	
+	return listingsData;
 
 
 }
-
 
 
 change(event){
@@ -67,9 +62,7 @@ change(event){
 	let name = event.target.name;
 	let value = (event.target.type === "checkbox") ? event.target.checked : event.target.value;
 
-
 //console.log(name);
-
 
 	this.setState({
 
@@ -77,12 +70,9 @@ change(event){
 
 	}, () => {
 
-		//console.log(this.state)
-
 		this.filteredData()
 
 	});
-
 
 
 }
@@ -142,50 +132,68 @@ if(this.state.sortby === "price-asc"){
 
 if(this.state.balcony){
 
-//console.log("you have a balcony");
+	newData = newData.filter((item) => {
 
-newData = newData.filter((item) => {
-
-// console.log(item.extras);
-
-return item.extras.indexOf("Balcony") !== -1;
+		return item.extras.indexOf("Balcony") !== -1;
 
 
+	});
 
-
-});
-
-console.log(newData);
+//console.log(newData);
 
 }
 
 if(this.state.conservatory){
 
-console.log("you have a conservatory");
+	newData = newData.filter((item) => {
+
+		return item.extras.indexOf("Conservatory") !== -1;
+
+
+	});
+
+//console.log(newData);
 
 }
 
 if(this.state.swimming_pool){
 
-console.log("you have a swimming pool");
+	newData = newData.filter((item) => {
+
+		return item.extras.indexOf("Swimming Pool") !== -1;
+
+
+	});
+
+//console.log(newData);
 
 }
 
 if(this.state.garage){
 
-console.log("you have a garage");
+	newData = newData.filter((item) => {
+
+		return item.extras.indexOf("Garage") !== -1;
+
+
+	});
+
+//console.log(newData);
 
 }
 
 if(this.state.gym){
 
-console.log("you have a gym");
+	newData = newData.filter((item) => {
+
+		return item.extras.indexOf("Gym") !== -1;
+
+
+	});
+
+//console.log(newData);
 
 }
-
-
-
-
 
 
 
@@ -203,6 +211,7 @@ return true;
 
 }
 
+return newData;
 
 })
 
@@ -210,7 +219,7 @@ return true;
 
 	this.setState({
 
-		filteredData: newData
+	filteredData: newData
 
 	});
 
@@ -223,7 +232,7 @@ populateForms(){
 
 	let boroughs = this.state.listingsData.map((item) => {
 
-		return item.borough
+		return item.borough;
 
 	})
 
@@ -237,7 +246,7 @@ populateForms(){
 
 	let homeTypes = this.state.listingsData.map((item) => {
 
-		return item.homeType
+		return item.homeType;
 
 	})
 
@@ -251,7 +260,7 @@ populateForms(){
 
 		let bedrooms = this.state.listingsData.map((item) => {
 
-		return item.bedrooms
+		return item.bedrooms;
 
 	})
 
@@ -269,33 +278,19 @@ populateForms(){
 		bedrooms,
 		boroughs
 
-
 	}
 
-}, () =>{
-
-	//console.log(this.state);
-
 });
-
 
 
 }
 
 
-
-
   render() {
-
-	  //alert(this.state.listingsData.length);
-
-	  /*console.log(this.state.listingsData);*/
 
     return (
 
       <div className="App">
-
-	  {this.state.listingsData[0].address}
 
 	  <Header />
 
@@ -310,7 +305,7 @@ populateForms(){
 	  <Listings
 	  listingsData={this.state.filteredData}
 	  change={this.change}
-		globalState={this.state}
+	  globalState={this.state}
 	  />
 
 	  </section>

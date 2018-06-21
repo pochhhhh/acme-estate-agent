@@ -179,6 +179,12 @@ padding:15px;
 
 }
 
+#Listings .sort-by-price{
+	
+
+	
+}
+
 #Listings .sort-by-area{
 
 	margin-bottom:20px;
@@ -209,12 +215,18 @@ display:inline-block;
 	display:inline-block;
 	margin-right:15px;
 	vertical-align: top;
+	height: 80px;
+	position:relative;
+	left:30px;
+	top:-25px;
 
 }
 
 #Listings .sort-options .view{
 
 	display:inline-block;
+	position:relative;
+	left:10px;
 
 }
 #Listings .sort-options .fas{
@@ -461,4 +473,34 @@ font-weight:700;
   -webkit-box-shadow: 0 9px 54px -4px rgba(224, 224, 224, 1);
   box-shadow: 0 0 15px 0 rgba(224, 224, 224, 1);
 
+}
+
+/* Footer */
+
+#Footer{
+	
+	background:blue;
+	height:100px;
+	width:100vw;
+	background: #0B0129;
+	color:white;
+	text-align: center;
+	font-size:1.5rem;
+	
+}
+#Footer p{
+	
+	position:relative;
+	top:30px;
+	
+}
+
+#Footer a{
+	color:white;
+	text-decoration:none;
+}
+#Footer a:hover{
+	
+	background:#FF728C;	
+	
 }

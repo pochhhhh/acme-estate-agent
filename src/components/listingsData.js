@@ -1,4 +1,6 @@
-const listingsData = [{
+const listingsData = [
+
+{
 	
 	address: "123 Marlborough Lane",
 	borough: "Kensington & Chelsea",
@@ -130,6 +132,123 @@ const listingsData = [{
 	extras: ["Garden"],
 	homeType: "House",
 	image: "http://media.rightmove.co.uk/dir/66k/65830/60594499/65830_SJW160193_IMG_01_0000_max_656x437.jpg",
+	userName: "Yvonne Fields"
+},
+
+{
+
+	address: "555 Master Avenue",
+	borough: "Kensington & Chelsea",
+	bedrooms: 10,
+	price: 10000000,
+	floorSpace: 10000,
+	extras: ["Garden", "Balcony", "Conservatory", "Swimming Pool", "Garage", "Gym"],
+	homeType: "House",
+	image: "https://media.architecturaldigest.com/photos/5953cf9f13f4522790b28af0/master/w_640,c_limit/10697%2520Somma%2520Way.jpg",
+	userName: "Yvonne Fields"
+}
+,
+
+{
+
+	address: "526 Parkhill Gardens",
+	borough: "Ealing",
+	bedrooms: 3,
+	price: 350000,
+	floorSpace: 300,
+	extras: ["Garden", "Balcony", "Conservatory", "Swimming Pool", "Garage", "Gym"],
+	homeType: "House",
+	image: "https://media.architecturaldigest.com/photos/5953cf9f13f4522790b28af0/master/w_640,c_limit/10697%2520Somma%2520Way.jpg",
+	userName: "Yvonne Fields"
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+
+	address: "44 Lion's Gate",
+	borough: "Ealing",
+	bedrooms: 2,
+	price: 450000,
+	floorSpace: 1000,
+	extras: ["Garden"],
+	homeType: "House",
+	image: "http://www.hatarch.co.uk/images/projects/rs_Swains_001.jpg",
+	userName: "Sharon Mulberry"
+},
+
+{
+
+	address: "50 Wavey Lane",
+	borough: "Islington",
+	bedrooms: 3,
+	price: 700000,
+	floorSpace: 1000,
+	extras: ["Garden", "Conservatory"],
+	homeType: "House",
+	image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOkwyJHJcqXqAVIYynMT99c80z04IgQrTYjUdP7nuPq2OXi8ti7w",
+	userName: "Thomas Rizal"
+},
+
+{
+
+	address: "325 Applewood Road",
+	borough: "Hammersmith & Fulham",
+	bedrooms: 2,
+	price: 650000,
+	floorSpace: 1000,
+	extras: ["Garden"],
+	homeType: "House",
+	image: "http://media.rightmove.co.uk/dir/66k/65830/60594499/65830_SJW160193_IMG_01_0000_max_656x437.jpg",
+	userName: "Yvonne Fields"
+},
+
+{
+
+	address: "555 Master Avenue",
+	borough: "Kensington & Chelsea",
+	bedrooms: 10,
+	price: 10000000,
+	floorSpace: 10000,
+	extras: ["Garden", "Balcony", "Conservatory", "Swimming Pool", "Garage", "Gym"],
+	homeType: "House",
+	image: "https://media.architecturaldigest.com/photos/5953cf9f13f4522790b28af0/master/w_640,c_limit/10697%2520Somma%2520Way.jpg",
+	userName: "Yvonne Fields"
+}
+,
+
+{
+
+	address: "526 Parkhill Gardens",
+	borough: "Ealing",
+	bedrooms: 3,
+	price: 350000,
+	floorSpace: 300,
+	extras: ["Garden", "Balcony", "Conservatory", "Swimming Pool", "Garage", "Gym"],
+	homeType: "House",
+	image: "https://media.architecturaldigest.com/photos/5953cf9f13f4522790b28af0/master/w_640,c_limit/10697%2520Somma%2520Way.jpg",
 	userName: "Yvonne Fields"
 }
 

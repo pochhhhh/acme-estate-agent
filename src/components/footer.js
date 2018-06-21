@@ -1,24 +1,22 @@
 import React from "react";
 
-class Footer extends React.Component{
+const Footer = () => {
 
-render(){
 
 return(
 
-<h1>Footer Component</h1>
+<footer id="Footer">
+
+
+<p>Acme Estate Agent - ©2018 - Created by <a href="https://github.com/pochhhhh">Marlon Pempengco</a></p>
+
+
+</footer>
 
 
 );
 
 
 }
-
-
-
-
-
-}
-
 
 export default Footer;
