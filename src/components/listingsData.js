@@ -140,7 +140,7 @@ const listingsData = [
 	address: "555 Master Avenue",
 	borough: "Kensington & Chelsea",
 	bedrooms: 10,
-	price: 10000000,
+	price: 45000000,
 	floorSpace: 10000,
 	extras: ["Garden", "Balcony", "Conservatory", "Swimming Pool", "Garage", "Gym"],
 	homeType: "House",
@@ -152,104 +152,118 @@ const listingsData = [
 {
 
 	address: "526 Parkhill Gardens",
+	borough: "Westminster",
+	bedrooms: 3,
+	price: 21000000,
+	floorSpace: 5000,
+	extras: ["Garden", "Balcony", "Conservatory", "Swimming Pool", "Garage", "Gym"],
+	homeType: "House",
+	image: "https://ward8online.com/wp-content/uploads/best-millionaire-homes-home-designs-interior-exterior-pinterest_67949.jpg",
+	userName: "Yvonne Fields"
+},
+{
+
+	address: "46 First Avenue",
+	borough: "Wandsworth",
+	bedrooms: 3,
+	price: 420000,
+	floorSpace: 500,
+	extras: ["Garden"],
+	homeType: "House",
+	image: "https://cdn.images.express.co.uk/img/dynamic/23/590x/house-647764.jpg",
+	userName: "David Morelli"
+},
+
+{
+
+	address: "32 Bishops Park Gardens",
 	borough: "Ealing",
 	bedrooms: 3,
 	price: 350000,
-	floorSpace: 300,
-	extras: ["Garden", "Balcony", "Conservatory", "Swimming Pool", "Garage", "Gym"],
-	homeType: "House",
-	image: "https://media.architecturaldigest.com/photos/5953cf9f13f4522790b28af0/master/w_640,c_limit/10697%2520Somma%2520Way.jpg",
-	userName: "Yvonne Fields"
-},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{
-
-	address: "44 Lion's Gate",
-	borough: "Ealing",
-	bedrooms: 2,
-	price: 450000,
-	floorSpace: 1000,
-	extras: ["Garden"],
-	homeType: "House",
-	image: "http://www.hatarch.co.uk/images/projects/rs_Swains_001.jpg",
-	userName: "Sharon Mulberry"
-},
-
-{
-
-	address: "50 Wavey Lane",
-	borough: "Islington",
-	bedrooms: 3,
-	price: 700000,
-	floorSpace: 1000,
+	floorSpace: 500,
 	extras: ["Garden", "Conservatory"],
 	homeType: "House",
-	image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOkwyJHJcqXqAVIYynMT99c80z04IgQrTYjUdP7nuPq2OXi8ti7w",
-	userName: "Thomas Rizal"
+	image: "http://www.yellowad.co.uk/images/news/2018/388_MD-TERRACED-HOUSES005.jpg",
+	userName: "Elizabeth Roberts"
 },
 
 {
 
-	address: "325 Applewood Road",
-	borough: "Hammersmith & Fulham",
+	address: "11 Flamstead Lane",
+	borough: "Ealing",
 	bedrooms: 2,
-	price: 650000,
-	floorSpace: 1000,
+	price: 250000,
+	floorSpace: 500,
 	extras: ["Garden"],
 	homeType: "House",
-	image: "http://media.rightmove.co.uk/dir/66k/65830/60594499/65830_SJW160193_IMG_01_0000_max_656x437.jpg",
-	userName: "Yvonne Fields"
+	image: "http://www.homeandbuild.co.uk/public/uploads/images/lewisham_house_images_1466079436.jpg",
+	userName: "Neil O'Sullivan"
 },
 
 {
 
-	address: "555 Master Avenue",
-	borough: "Kensington & Chelsea",
-	bedrooms: 10,
-	price: 10000000,
-	floorSpace: 10000,
-	extras: ["Garden", "Balcony", "Conservatory", "Swimming Pool", "Garage", "Gym"],
+	address: "32 Brick Avenue",
+	borough: "Greenwich",
+	bedrooms: 3,
+	price: 370000,
+	floorSpace: 500,
+	extras: ["Garden", "Conservatory"],
 	homeType: "House",
-	image: "https://media.architecturaldigest.com/photos/5953cf9f13f4522790b28af0/master/w_640,c_limit/10697%2520Somma%2520Way.jpg",
-	userName: "Yvonne Fields"
+	image: "https://www.kfh.co.uk/i/976/293/220/0/london-house-prices-rise.jpg",
+	userName: "Stephanie Nathans"
 }
 ,
 
 {
 
-	address: "526 Parkhill Gardens",
+	address: "15 Sandy Woods",
+	borough: "Wandsworth",
+	bedrooms: 2,
+	price: 650000,
+	floorSpace: 500,
+	extras: ["Balcony"],
+	homeType: "House",
+	image: "https://i.ebayimg.com/00/s/NjgzWDEwMjQ=/z/gdcAAOSwomJas9hT/$_86.JPG",
+	userName: "David Andrews"
+},
+{
+
+	address: "5 Colorado Court",
 	borough: "Ealing",
 	bedrooms: 3,
-	price: 350000,
-	floorSpace: 300,
-	extras: ["Garden", "Balcony", "Conservatory", "Swimming Pool", "Garage", "Gym"],
+	price: 400000,
+	floorSpace: 500,
+	extras: ["Balcony"],
+	homeType: "Flat",
+	image: "http://rockmystyle.co.uk/wp-content/gallery/greg-london-flat/1254_d_and_g_2a_dempster_road_kitchen1-1.jpg",
+	userName: "Tiffany Thomas"
+},
+
+{
+
+	address: "7 Conduit Mews",
+	borough: "Kensington & Chelsea",
+	bedrooms: 3,
+	price: 5000000,
+	floorSpace: 2000,
+	extras: ["Garden", "Conservatory"],
 	homeType: "House",
-	image: "https://media.architecturaldigest.com/photos/5953cf9f13f4522790b28af0/master/w_640,c_limit/10697%2520Somma%2520Way.jpg",
-	userName: "Yvonne Fields"
+	image: "https://media.rightmove.co.uk/dir/crop/10:9-16:9/43k/42848/72371795/42848_CHE080065_IMG_01_0000_max_476x317.jpg",
+	userName: "Sir David Dean"
+}
+,
+
+{
+
+	address: "9 Lucky Lane",
+	borough: "Greenwich",
+	bedrooms: 3,
+	price: 370000,
+	floorSpace: 700,
+	extras: ["Garden", "Garage"],
+	homeType: "House",
+	image: "https://mr0.homeflow-assets.co.uk/files/photo/image/14764/7573/_x_/STH160159_41.jpg",
+	userName: "Silva McCleod"
 }
 
 ];
