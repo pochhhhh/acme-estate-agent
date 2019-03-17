@@ -35,7 +35,7 @@ return "Sorry your filter did not match any listing"
 
     return(
 
-  <div className="listing" key={index}>
+<div className="listing" key={index}>
 
 <div className="listing-img"
 
@@ -100,12 +100,12 @@ return(
 <section className="sort-by-area">
 
 <div className="results">
-{this.props.globalState.filteredData.length} results found
+Showing {this.props.globalState.filteredData.length} properties:
 </div>
 
 <div className="sort-options">
 
-<select name="sortby" className="sortby" onChange={this.props.change}>
+<select name="sortby" className="sort-by-price" onChange={this.props.change}>
 <option value="price-dsc">Lowest Price</option>
 <option value="price-asc">Highest Price</option>
 </select>

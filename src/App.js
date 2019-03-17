@@ -50,16 +50,11 @@ componentWillMount(){
 
 
 	});
-
-this.setState({
-
-	listingsData
-
-});
+	
+	return listingsData;
 
 
 }
-
 
 
 change(event){
@@ -67,9 +62,7 @@ change(event){
 	let name = event.target.name;
 	let value = (event.target.type === "checkbox") ? event.target.checked : event.target.value;
 
-
 //console.log(name);
-
 
 	this.setState({
 
@@ -77,12 +70,9 @@ change(event){
 
 	}, () => {
 
-		//console.log(this.state)
-
 		this.filteredData()
 
 	});
-
 
 
 }
@@ -142,43 +132,88 @@ if(this.state.sortby === "price-asc"){
 
 if(this.state.balcony){
 
+<<<<<<< HEAD
 //console.log("you have a balcony");
+=======
+	newData = newData.filter((item) => {
+>>>>>>> cea65281ac9825222d1d85e8e57e6dfab9536bef
 
-newData = newData.filter((item) => {
+		return item.extras.indexOf("Balcony") !== -1;
 
-console.log(item.extras);
 
-});
+	});
+
+//console.log(newData);
 
 }
 
 if(this.state.conservatory){
 
+<<<<<<< HEAD
 //console.log("you have a conservatory");
+=======
+	newData = newData.filter((item) => {
+
+		return item.extras.indexOf("Conservatory") !== -1;
+
+
+	});
+
+//console.log(newData);
+>>>>>>> cea65281ac9825222d1d85e8e57e6dfab9536bef
 
 }
 
 if(this.state.swimming_pool){
 
+<<<<<<< HEAD
 //console.log("you have a swimming pool");
+=======
+	newData = newData.filter((item) => {
+
+		return item.extras.indexOf("Swimming Pool") !== -1;
+
+
+	});
+
+//console.log(newData);
+>>>>>>> cea65281ac9825222d1d85e8e57e6dfab9536bef
 
 }
 
 if(this.state.garage){
 
+<<<<<<< HEAD
 //console.log("you have a garage");
+=======
+	newData = newData.filter((item) => {
+
+		return item.extras.indexOf("Garage") !== -1;
+
+
+	});
+
+//console.log(newData);
+>>>>>>> cea65281ac9825222d1d85e8e57e6dfab9536bef
 
 }
 
 if(this.state.gym){
 
+<<<<<<< HEAD
 //console.log("you have a gym");
+=======
+	newData = newData.filter((item) => {
+>>>>>>> cea65281ac9825222d1d85e8e57e6dfab9536bef
+
+		return item.extras.indexOf("Gym") !== -1;
+
+
+	});
+
+//console.log(newData);
 
 }
-
-
-
-
 
 
 
@@ -196,6 +231,7 @@ return true;
 
 }
 
+return newData;
 
 })
 
@@ -203,7 +239,7 @@ return true;
 
 	this.setState({
 
-		filteredData: newData
+	filteredData: newData
 
 	});
 
@@ -216,7 +252,7 @@ populateForms(){
 
 	let boroughs = this.state.listingsData.map((item) => {
 
-		return item.borough
+		return item.borough;
 
 	})
 
@@ -230,7 +266,7 @@ populateForms(){
 
 	let homeTypes = this.state.listingsData.map((item) => {
 
-		return item.homeType
+		return item.homeType;
 
 	})
 
@@ -244,7 +280,7 @@ populateForms(){
 
 		let bedrooms = this.state.listingsData.map((item) => {
 
-		return item.bedrooms
+		return item.bedrooms;
 
 	})
 
@@ -262,20 +298,12 @@ populateForms(){
 		bedrooms,
 		boroughs
 
-
 	}
-
-}, () =>{
-
-	//console.log(this.state);
 
 });
 
 
-
 }
-
-
 
 
   render() {
@@ -284,8 +312,11 @@ populateForms(){
 
       <div className="App">
 
+<<<<<<< HEAD
 	 
 
+=======
+>>>>>>> cea65281ac9825222d1d85e8e57e6dfab9536bef
 	  <Header />
 
 	  <section id="content-area">
@@ -299,7 +330,7 @@ populateForms(){
 	  <Listings
 	  listingsData={this.state.filteredData}
 	  change={this.change}
-		globalState={this.state}
+	  globalState={this.state}
 	  />
 
 	  </section>
