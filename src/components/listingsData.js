@@ -28,7 +28,7 @@ const listingsData = [{
 
 {
 
-	address: "12 Bowl Street",
+	address: "14 Bowl Street",
 	borough: "Hammersmith & Fulham",
 	bedrooms: 1,
 	price: 300000,
