@@ -1,5 +1,5 @@
 const listingsData = [{
-	
+
 	address: "123 Marlborough Lane",
 	borough: "Kensington & Chelsea",
 	bedrooms: 3,
@@ -23,7 +23,7 @@ const listingsData = [{
 	homeType: "House",
 	image: "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&h=350",
 	userName: "Nathan George"
-	
+
 },
 
 {

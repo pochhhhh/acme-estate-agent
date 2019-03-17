@@ -142,7 +142,7 @@ if(this.state.sortby === "price-asc"){
 
 if(this.state.balcony){
 
-console.log("you have a balcony");
+//console.log("you have a balcony");
 
 newData = newData.filter((item) => {
 
@@ -154,25 +154,25 @@ console.log(item.extras);
 
 if(this.state.conservatory){
 
-console.log("you have a conservatory");
+//console.log("you have a conservatory");
 
 }
 
 if(this.state.swimming_pool){
 
-console.log("you have a swimming pool");
+//console.log("you have a swimming pool");
 
 }
 
 if(this.state.garage){
 
-console.log("you have a garage");
+//console.log("you have a garage");
 
 }
 
 if(this.state.gym){
 
-console.log("you have a gym");
+//console.log("you have a gym");
 
 }
 
@@ -280,15 +280,11 @@ populateForms(){
 
   render() {
 
-	  //alert(this.state.listingsData.length);
-
-	  /*console.log(this.state.listingsData);*/
-
     return (
 
       <div className="App">
 
-	  {this.state.listingsData[0].address}
+	 
 
 	  <Header />
 
